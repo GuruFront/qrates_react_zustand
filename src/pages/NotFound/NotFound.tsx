@@ -1,10 +1,10 @@
 import React from 'react'
 import NotFoundIcon from '../../assets/NotFoundIcon'
-import './style.scss'
-
+import Navigation from '../../components/Navigation/Navigation';
 import {
 Link
 } from 'react-router-dom';
+import './style.scss'
 
 const NotFound = () => {
   return <div className='notFoundPage'>
@@ -19,6 +19,9 @@ const NotFound = () => {
         to go back to the homepage.
       </p>
       <Link to='/' className='notFoundPage__link'>HOME</Link>
+    </div>
+    <div className='navigationWrap'>
+      <Navigation/>
     </div>
   </div>
 }
