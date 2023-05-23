@@ -19,7 +19,9 @@ export default function Navigation() {
       path: '/catalog',
     }]
 
-  // const onPageChange = () => window.innerWidth <= 1550 ? setMenuStatus : null
+  const onPageChange = () => {
+      window.innerWidth <= 1550 ? setMenuStatus() : null
+  }
 
   return (
     <nav className={classNames('navigation', menuStatus && 'navigation_active')}>
@@ -32,7 +34,7 @@ export default function Navigation() {
             className={classNames('navigation__listItem', location.pathname == `${i.path}` && 'navigation__listItem_active')}
             key={index}>
             <Link to={i.path}
-                  onClick={()=>window.innerWidth <= 1550 ? setMenuStatus : null}
+                  onClick={onPageChange}
                   className={classNames('navigation__link', location.pathname == `${i.path}` && 'navigation__link_active')}>
               {i.title}
             </Link>
