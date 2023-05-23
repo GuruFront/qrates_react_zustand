@@ -1,7 +1,6 @@
 ## Before you start
 Make sure you are familiar with the **"Simple modular"** approach to develop this app. <br>
 Some info about you can find here [frontend-architectures-simple-modular-approach](https://javascript.plainenglish.io/frontend-architectures-simple-modular-approach-7f3b3efe0ecd).<br> 
-Backend you can find here https://github.com/GuruFront/products_catalog_backend.
 
 ## Install dependencies
 
