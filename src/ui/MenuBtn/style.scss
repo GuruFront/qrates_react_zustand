@@ -1,0 +1,43 @@
+@import '../../variables';
+
+@mixin menuBtnLine {
+  width: 28px;
+  height: 3px;
+  display: inline-block;
+}
+
+.menuBtn {
+  margin-top: 9px;
+  display: flex;
+  flex-direction: column;
+  cursor: pointer;
+  &__line {
+    @include menuBtnLine;
+    background-color: $primary-color;
+    &_active {
+      height: 0;
+    }
+  }
+  &:after,
+  &:before {
+    @include menuBtnLine;
+    background-color: $primary-color;
+    content: '';
+    margin: 5px 0;
+  }
+  &_active{
+    &:after{
+      background-color: $secondary-color;
+      transform: rotate(45deg) translate(-4px, -4px);
+    }
+    &:before{
+      background-color: $secondary-color;
+      transform: rotate(-45deg) translate(-5px, 4px);
+    }
+  }
+
+  @media (min-width: 1551px) {
+    display: none;
+  }
+}
+

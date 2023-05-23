@@ -1,0 +1,21 @@
+@import '../../variables';
+
+.pagination {
+  display: inline-flex;
+  align-items: flex-start;
+  gap: 8px;
+  &__btn {
+    cursor: pointer;
+    padding: 5px 10px;
+    background-color: $primary-color;
+    font-weight: 400;
+    font-size: 16px;
+    line-height: 19px;
+    border-radius: 14px;
+    &_active {
+      background-color: $secondary-color;
+      color: $primary-color;
+      box-shadow: 0 4px 10px rgba($primary-color, .25);
+    }
+  }
+}

@@ -1,0 +1,37 @@
+@import '../../variables';
+
+.notFoundIcon {
+  max-width: 500px;
+  width: 100%;
+}
+
+.notFoundPage {
+  max-width: 1880px;
+  margin: 0 auto;
+  padding: 0 15px;
+  display: flex;
+  gap: 15px;
+  flex-direction: column;
+  align-items: center;
+  @media (min-width: 1000px) {
+    flex-direction: row;
+    justify-content: center;
+  }
+
+  &__content {
+    color: #000;
+    max-width: 500px;
+    margin-bottom: 50px;
+  }
+  &__link {
+    display: inline-block;
+    margin-top: 10px;
+    font-size: 20px;
+    font-weight: 500;
+    text-decoration: none;
+    border: 2px solid $primary-color;
+    padding: 5px 15px;
+    border-radius: 30px;
+    color: $primary-color;
+  }
+}

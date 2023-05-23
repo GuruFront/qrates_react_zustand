@@ -1,0 +1,15 @@
+@import '../../variables';
+
+.inputWrap {
+  &__input {
+    background: $secondary-color;
+    border: 2px dashed $input-col-border;
+    border-radius: 17.5px;
+    padding: 8px 25px;
+    outline: none;
+    width: 100%;
+    &:focus {
+      border-style: solid;
+    }
+  }
+}

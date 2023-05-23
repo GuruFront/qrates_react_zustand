@@ -1,0 +1,71 @@
+@import '../../variables';
+
+.navigation {
+  display: none;
+  background-color: $primary-color;
+  min-height: calc(100vh - 70px);
+  z-index: 999;
+  &_active {
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    max-width: 100%;
+    position: fixed;
+    top: 70px;
+    left: 0;
+    text-align: center;
+  }
+
+  @media (min-width: 1551px) {
+    display: flex;
+    justify-content: flex-start;
+    flex-direction: column;
+    position: static;
+    text-align: left;
+    width: 455px;
+
+    box-shadow: 0 4px 10px rgba($primary-color, .25);
+  }
+
+  &__title {
+    padding: 22px 29px;
+    font-weight: 800;
+    font-size: 36px;
+    line-height: 42px;
+    display: inline-block;
+    margin-bottom: 70px;
+  }
+
+  &__link {
+    text-decoration: none;
+    color: $secondary-color;
+    padding: 15px;
+    display: inline-block;
+    width: 100%;
+
+    &_active {
+      color: $sub-primary-color;
+    }
+  }
+
+  &__list {
+    margin-left: 0;
+    text-align: center;
+
+    &Item {
+      cursor: pointer;
+      font-weight: 800;
+      line-height: 19px;
+      font-size: 16px;
+      border-bottom: 1px solid $secondary-color;
+      border-top: 1px solid $secondary-color;
+
+      &_active {
+        color: $sub-primary-color;
+        background-color: $secondary-color;
+      }
+    }
+  }
+
+}

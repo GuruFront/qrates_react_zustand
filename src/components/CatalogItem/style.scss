@@ -1,0 +1,44 @@
+@import '../../variables';
+
+.catalogItem {
+  box-shadow: 0 4px 10px rgba($primary-color, .25);
+
+  &__imgWrap {
+    margin: 0;
+  }
+  &__img {
+    object-fit: cover;
+    object-position: top;
+    display: block;
+    width: 100%;
+    height: 290px;
+  }
+
+  &__content {
+    padding: 15px;
+
+    &Title {
+      color: $sub-primary-color;
+      font-weight: 800;
+      font-size: 16px;
+      line-height: 19px;
+    }
+
+    &Text {
+      color: $primary-color;
+      font-weight: 400;
+      font-size: 14px;
+      line-height: 16px;
+      min-height: 80px;
+    }
+
+    &Actions {
+      text-align: right;
+    }
+
+    &Like {
+      cursor: pointer;
+    }
+
+  }
+}
