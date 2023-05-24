@@ -2,10 +2,11 @@
 
 .inputWrap {
   &__input {
+    font-size: 16px;
     background: $secondary-color;
     border: 2px dashed $input-col-border;
     border-radius: 17.5px;
-    padding: 8px 25px;
+    padding: 8px 20px;
     outline: none;
     width: 100%;
     &:focus {
