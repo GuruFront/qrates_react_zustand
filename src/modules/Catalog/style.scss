@@ -36,7 +36,7 @@
   grid-template-columns: repeat(1, 1fr);
   gap: 15px;
   margin-bottom: 35px;
-  text-align: center;
+
   @media (min-width: 450px) {
     grid-template-columns: repeat(2, 1fr);
   }
@@ -47,5 +47,6 @@
 
   &_loading {
     display: block;
+    text-align: center;
   }
 }
